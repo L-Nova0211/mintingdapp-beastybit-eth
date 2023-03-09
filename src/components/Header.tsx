@@ -8,6 +8,7 @@ import * as Ioicon from "react-icons/io";
 import { useWeb3React } from "@web3-react/core";
 import { injected } from "../connecthook/connect";
 import { switchNetwork } from "../connecthook/switch-network";
+import Head from "next/head";
 
 export default function Header() {
   const router = useRouter();
@@ -49,14 +50,18 @@ export default function Header() {
       }
     };
     connectWalletOnPageLoad();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <header className="w-full bg-gray-200 bg-opacity-80 h-20 flex justify-between px-4 fixed z-[9999]">
-      <div className="logo">
-        <img src="/logo.png" className="w-20 h-20" />
-      </div>
+    <header className="w-full bg-gray-300 bg-opacity-80 h-20 flex justify-between px-4 fixed z-[9999]">
+      <Head>
+        <link rel="icon" href="/logo.png" />
+      </Head>
+      <Link href={`/`}>
+        <div className="logo cursor-pointer">
+          <img src="/logo.png" className="w-20 h-20" />
+        </div>
+      </Link>
       <div className="gap-10 items-center justify-center lg:flex hidden">
         <div className="flex justify-between items-center">
           <ul className="flex gap-7 items-center justify-between w-full">
@@ -127,7 +132,7 @@ export default function Header() {
       </div>
       <div className="flex items-center justify-center gap-4">
         <button
-          className="w-[170px] bg-gray-700 py-3 text-white flex justify-center items-center hover:bg-gray-600 duration-300 transition-all text-[1.2rem] gap-3"
+          className="w-[170px] bg-black py-3 text-white flex justify-center items-center hover:bg-gray-800 duration-300 transition-all text-[1.2rem] gap-3"
           onClick={() => {
             !account ? connect() : disconnect();
           }}

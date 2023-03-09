@@ -25,8 +25,8 @@ const Mint: NextPage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 500,
+    speed: 300,
+    autoplaySpeed: 300,
     fade: true,
   };
 
