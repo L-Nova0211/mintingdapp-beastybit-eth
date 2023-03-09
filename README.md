@@ -7,7 +7,7 @@ Getting Started
 To get started with this project, first clone the repository:
 ```bash
 git clone https://github.com/zeno3618/mintingdapp-beastybit-eth
-```bash
+```
 
 Then install dependencies:
 
@@ -16,7 +16,7 @@ cd nextjs-typescript-template
 npm install
 # or
 yarn install
-```bash
+```
 
 Once the installation is complete, start the development server by running:
 
@@ -24,7 +24,7 @@ Once the installation is complete, start the development server by running:
 npm run dev
 # or
 yarn run dev
-```bash
+```
 
 The development server should now be running on http://localhost:3000.
 
