@@ -1,4 +1,5 @@
 # mintingdapp-beastybit-eth
+![image](https://user-images.githubusercontent.com/29924624/224155523-5c5cf6d0-e596-483b-b420-fdecc289a3f4.png)
 
 Next.js TypeScript Template
 This is a basic template for building a Next.js project with TypeScript. This project includes basic settings and files to help you get started.
