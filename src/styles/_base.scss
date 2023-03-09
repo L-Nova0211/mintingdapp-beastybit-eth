@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #000;
+    font-family: "FreakyStory";
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "FreakyStory";
+    src: local("FreakyStory"),
+      url("/font/FreakyStory.otf") format("truetype");
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: "light";
+    src: local("light"),
+      url("/font/LucidaConsoleRegular.ttf") format("truetype");
+    font-weight: bold;
+  }
+  
+.regularfont {
+    font-family: "light" !important;
+}
+
+.sitefont{
+    font-family: "FreakyStory" !important;
+}
