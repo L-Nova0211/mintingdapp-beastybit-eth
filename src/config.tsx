@@ -1,3 +1,1 @@
-import { PublicKey } from "@solana/web3.js";
-export const NETWORK = "devnet";
-export const CREATOR_ADDRESS = "E7Vav8PKf1sTH5u59WLpgtjF7RytDdEnNEuvyMxF6x7p";
+export const CONTRACTADDRESS = "0x3438EB292D5Ac26B9e183101F67022C8eaBBe8cD";
