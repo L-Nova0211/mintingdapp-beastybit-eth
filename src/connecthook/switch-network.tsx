@@ -1,7 +1,7 @@
 const switchNetworkRequest = () =>
   (window as any).ethereum.request({
     method: "wallet_switchEthereumChain",
-    params: [{ chainId: "0x10" }],
+    params: [{ chainId: "0x72" }],
   });
 
 const addNetworkRequest = () =>
@@ -9,13 +9,13 @@ const addNetworkRequest = () =>
     method: "wallet_addEthereumChain",
     params: [
       {
-        chainId: "0x10",
-        chainName: "Fantom Opera",
+        chainId: "0x72",
+        chainName: "coston2 testnet",
         rpcUrls: ["https://coston-api.flare.network/ext/bc/C/rpc"],
-        blockExplorerUrls: ["https://coston-explorer.flare.network/"],
+        blockExplorerUrls: ["https://coston2-explorer.flare.network/"],
         nativeCurrency: {
-          name: "CFLR",
-          symbol: "CFLR",
+          name: "C2FLR",
+          symbol: "C2FLR",
           decimals: 16,
         },
       },
